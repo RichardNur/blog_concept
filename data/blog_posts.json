@@ -1,30 +1,44 @@
 [
     {
-        "id": 1,
-        "author": "John Doe",
-        "title": "First Post",
-        "content": "This is my first post.",
-        "date": "01.01.2000"
+        "id": "369241a0-f3c0-4a02-bd63",
+        "author": "Chef Oliver",
+        "title": "The Best Oils for High-Heat Cooking",
+        "content": "When cooking at high temperatures, it's important to use oils with a high smoke point. Avocado oil, refined olive oil, and peanut oil are great choices for frying and saut\u00e9ing.",
+        "date": "2025-02-24 22:40"
     },
     {
-        "id": 2,
-        "author": "Jane Doe",
-        "title": "Second Post",
-        "content": "This is another post.",
-        "date": "2000-01-01"
+        "id": "369241a0-f3c0-bd63-73bcc132fe65",
+        "author": "Nutritionist Maria",
+        "title": "Why You Shouldn't Overheat Olive Oil",
+        "content": "Extra virgin olive oil is great for salads and low-heat cooking, but overheating it can break down its healthy fats. For frying, choose refined olive oil instead.",
+        "date": "2025-03-13 23:00"
     },
     {
-        "id": 3,
-        "author": "Steffen Spade",
-        "title": "Poker Fact",
-        "content": "Poker was originally played with 20 cards. The 52 card deck came about so that more people could play. The longest ever continuous poker game lasted for eight years, five months, and three days at the Birdcage Theater in Tombstone, Arizona in 1881.",
-        "date": "2025-02-23"
+        "id": "f47fc48b-44ec-4f18-d35d48953766",
+        "author": "Food Blogger Sam",
+        "title": "The Healthiest Cooking Oils and Their Uses",
+        "content": "Coconut oil is good for baking, sesame oil enhances Asian dishes, and ghee is an excellent butter substitute for frying due to its high smoke point.",
+        "date": "2025-02-19 10:15"
     },
     {
         "id": "369241a0-f3c0-4a02-bd63-73bcc132fe65",
-        "title": "Initial Post",
-        "author": "Richard",
-        "content": "Hello and Welcome!\r\nHave a happy Monday",
-        "date": "2025-02-24"
+        "author": "Chef Lisa",
+        "title": "Smoke Points: Why They Matter",
+        "content": "The smoke point of an oil determines when it starts to break down and release harmful compounds. Always match the right oil to your cooking method!",
+        "date": "2025-02-14 14:30"
+    },
+    {
+        "id": "f47fc48b-44ec-4f18-af25-d35d48953766",
+        "author": "Health Coach Alex",
+        "title": "Choosing the Right Oil for Your Diet",
+        "content": "For heart health, opt for oils rich in unsaturated fats like olive or flaxseed oil. For keto, coconut and avocado oil are excellent high-fat choices.",
+        "date": "2025-02-25 18:20"
+    },
+    {
+        "id": "1aa183a6-6001-49b2-a4d4-a3b743694add",
+        "title": "Test Consumer",
+        "author": "Consument 2918",
+        "content": "Hello, I really enjoy olive oil. I almost forgot to mention my favorite cooking oil ever is made of peanuts. I once heard you can heat it without any worries unlike other oils. What do you think about that?",
+        "date": "2025-01-24 22:49"
     }
 ]

@@ -1,6 +1,7 @@
 import json
 import uuid
-from typing import TextIO
+import datetime
+from datetime import datetime
 
 from flask import Flask, render_template, request, redirect, url_for
 
@@ -15,7 +16,7 @@ def index():
     """
     with open('data/blog_posts.json', 'r') as file:
         blog_posts = json.load(file)
-    blog_posts = sorted(blog_posts, key=lambda post: post['date'], reverse=True)
+    blog_posts = sorted(blog_posts, key=lambda post: datetime.strptime(post['date'], '%Y-%m-%d %H:%M'), reverse=True)
 
     return render_template('index.html', posts=blog_posts)
 
@@ -39,7 +40,7 @@ def add():
         title = request.form.get('title', '').strip()
         author = request.form.get('author', '').strip()
         content = request.form.get('content', '').strip()
-        date = request.form.get('date', '').strip()
+        date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 
         # create new post-entry
         new_post = {
@@ -88,6 +89,37 @@ def delete(post_id):
 
     return redirect(url_for('index'))
 
+
+@app.route('/update/<post_id>', methods=['GET', 'POST'])
+def update(post_id):
+    # Fetch the blog posts from the JSON file
+    try:
+        with open('data/blog_posts.json', 'r') as file:
+            blog_posts = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        blog_posts = []
+
+    post = None
+    for blog_post in blog_posts:
+        if str(blog_post['id']) == post_id:
+            post = blog_post
+
+    if post is None:
+        return "Post not found", 404
+
+    if request.method == 'POST':
+    # Update the post in the JSON file
+        post['title'] = request.form.get('title', '').strip()
+        post['author'] = request.form.get('author', '').strip()
+        post['content'] = request.form.get('content', '').strip()
+        post['date'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+
+        with open('data/blog_posts.json', 'w') as file:
+            json.dump(blog_posts, file, indent=4)
+        # Redirect back to index
+        return redirect(url_for('index'))
+
+    return render_template('update.html', post=post)
 
 
 if __name__ == '__main__':
