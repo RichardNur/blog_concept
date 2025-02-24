@@ -14,8 +14,18 @@
 
 ## Project Structure
 
-blog_concept/ ├── app.py # Main application file with Flask routes ├── templates/ │ ├── index.html # Displays all blog posts │ ├── add.html # Form to create a new blog post ├── static/ # Folder for static assets like CSS, JS ├── data/ │ └── blog_posts.json # Stores blog post information ├── requirements.txt # Dependency requirements for the app ├── README.md # Project documentation
-
+   ```markdown
+   blog_concept/
+   ├── 📄 app.py
+   ├── 📂 templates/
+   │   ├── 📄 index.html
+   │   ├── 📄 add.html
+   ├── 📂 static/
+   ├── 📂 data/
+   │   └── 📄 blog_posts.json
+   ├── 📄 requirements.txt
+   ├── 📄 README.md
+   ```
 
 ---
 
