@@ -1,0 +1,2 @@
+flask, Flask, render_template
+Flask~=3.1.0

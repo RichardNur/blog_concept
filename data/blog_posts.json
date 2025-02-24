@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post.",
+        "date": "01.01.2000"
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post.",
+        "date": "2000-01-01"
+    },
+    {
+        "id": 3,
+        "author": "Steffen Spade",
+        "title": "Poker Fact",
+        "content": "Poker was originally played with 20 cards. The 52 card deck came about so that more people could play. The longest ever continuous poker game lasted for eight years, five months, and three days at the Birdcage Theater in Tombstone, Arizona in 1881.",
+        "date": "2025-02-23"
+    },
+    {
+        "id": "369241a0-f3c0-4a02-bd63-73bcc132fe65",
+        "title": "Initial Post",
+        "author": "Richard",
+        "content": "Hello and Welcome!\r\nHave a happy Monday",
+        "date": "2025-02-24"
+    }
+]
